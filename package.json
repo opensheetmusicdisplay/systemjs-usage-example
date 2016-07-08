@@ -1,0 +1,36 @@
+{
+  "name": "systemjs-usage-example",
+  "version": "0.0.0",
+  "description": "An example how to use opensheetmusicdisplay in a systemjs environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "build",
+    "start": "http-server .",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opensheetmusicdisplay/systemjs-usage-example.git"
+  },
+  "keywords": [
+    "opensheetmusicdisplay",
+    "vexflow",
+    "systemjs",
+    "example"
+  ],
+  "author": "Sebastian Haas <s.haas@phonicscore.com> (http://sebastianhaas.at/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opensheetmusicdisplay/systemjs-usage-example/issues"
+  },
+  "homepage": "https://github.com/opensheetmusicdisplay/systemjs-usage-example#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "opensheetmusicdisplay": "^0.0.1",
+    "systemjs": "^0.19.31"
+  }
+}
