@@ -1,15 +1,13 @@
-import { MusicSheetAPI } from "opensheetmusicdisplay";
+import { OSMD } from "opensheetmusicdisplay";
 
-let osmd: MusicSheetAPI = new MusicSheetAPI();
-setupCanvas();
+let osmd: OSMD;
+setup();
 
-function setupCanvas() {
-	let canvas: HTMLCanvasElement = <HTMLCanvasElement>document.createElement("canvas");
-    canvas.width = 800;
-    canvas.height = 600;
-    document.body.appendChild(canvas);
-    osmd.setCanvas(canvas);
-    osmd.setWidth(800);
+function setup() {
+	let container: HTMLElement = <HTMLElement>document.createElement("div");
+    document.body.appendChild(container);
+
+    osmd = new OSMD(container, false);
     loadMusicXML("node_modules/opensheetmusicdisplay/test/data/MuzioClementi_SonatinaOpus36No1_part1.xml");
 };
 
@@ -24,6 +22,7 @@ function loadMusicXML(url: string) {
 	      break;
 	      case 4 : // COMPLETED
 	      	osmd.load(xhttp.responseXML);
+	      	osmd.render();
 	      	break;
 	      default:
 	      	throw("Error loading MusicXML.");
