@@ -27,10 +27,10 @@
   "homepage": "https://github.com/opensheetmusicdisplay/systemjs-usage-example#readme",
   "devDependencies": {
     "http-server": "^0.9.0",
-    "typescript": "^1.8.10"
+    "typescript": "^2.1.5"
   },
   "dependencies": {
-    "opensheetmusicdisplay": "^0.0.1-alpha.1",
-    "systemjs": "^0.19.36"
+    "opensheetmusicdisplay": "^0.1.0",
+    "systemjs": "^0.20.0"
   }
 }
