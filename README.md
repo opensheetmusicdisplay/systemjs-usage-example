@@ -1,4 +1,6 @@
 # systemjs-usage-example
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/opensheetmusicdisplay/systemjs-usage-example.svg)](https://greenkeeper.io/)
 An example how to use opensheetmusicdisplay in a systemjs environment.
 
 ## Usage
