@@ -1,13 +1,13 @@
-import { OSMD } from "opensheetmusicdisplay";
+import { OpenSheetMusicDisplay } from "opensheetmusicdisplay";
 
-let osmd: OSMD;
+let osmd: OpenSheetMusicDisplay;
 setup();
 
 function setup() {
 	let container: HTMLElement = <HTMLElement>document.createElement("div");
     document.body.appendChild(container);
 
-    osmd = new OSMD(container, false);
+    osmd = new OpenSheetMusicDisplay(container, {autoResize: false});
     loadMusicXML("node_modules/opensheetmusicdisplay/test/data/MuzioClementi_SonatinaOpus36No1_part1.xml");
 };
 
